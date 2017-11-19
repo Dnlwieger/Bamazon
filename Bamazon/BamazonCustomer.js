@@ -5,7 +5,7 @@ var connection = mysql.createConnection({
     host:"localhost",
     port: 3306,
     user: "root",
-    password: "",
+    password: "Dwiegercarat6",
     database: "bamazon"
 })
 
@@ -31,7 +31,7 @@ var askUser = function(res){
     inquirer.prompt([{
         type: 'input',
         name: "id",
-        message: "\n" + " Please select the ID number of the product you wish to purchase or enter [Q] to quit: ",
+        message: "\n" + "Please select the ID number of the product you wish to purchase or enter [Q] to quit: ",
             validate: function(value) {
                 var pass = value.match(/^\d+$/);
                 if (pass) {
